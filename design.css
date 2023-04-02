@@ -1,0 +1,46 @@
+
+body>div{
+    margin: 0 auto;
+    width: 950px;
+    padding: 0 18px;
+}
+
+h2,
+h3,
+h4{
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, Times, serif;
+}
+
+h2{
+    font-size: 2em;
+}
+
+.placeholder{
+    /* Intialise font shorthand to Courier New, Courier, monospace, bold, #000 color*/
+    font: bold 1em Courier New, Courier, monospace;
+    color: #000;
+}
+
+.imp{
+    font-weight: bold;
+}
+
+dt::before{
+    content: "👉";
+}
+
+dt::after{
+    content: "👈";
+}
+
+ul{
+    margin: auto;
+}
+
+li::marker{
+    content: "👉";
+}
+
+#special{
+    content: "\002F";
+}

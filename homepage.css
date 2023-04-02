@@ -1,0 +1,117 @@
+/* For index.html */
+
+#basic-info {
+    float: left;
+    width: 40%;
+    margin-bottom: 3%;
+}
+#contents {
+    float: right;
+    width: 55%;
+}
+
+/* Info */
+#basic-info dl { 
+    margin-bottom: 0;
+    margin-top: auto;
+}
+#basic-info dt {
+    font: bold 1.5em 'Times New Roman', Times, serif;
+    margin-left: 2%;
+}
+#basic-info ul { 
+    padding-left: 0;
+    margin: 0 auto;
+}
+#basic-info ul > li {
+    padding-left: 0;
+}
+#basic-info ul > li::marker {
+    content : '';
+}
+#basic-info ul > li::first-letter {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+#basic-info dd:last-child { 
+    margin-right: 5%;
+}
+#basic-info dd > img {
+    width: 100%;
+}
+#basic-info dd > img:hover {
+    cursor: pointer;
+}
+#basic-info dl + a {
+    width: 100%;
+    height: auto;
+}
+#order_button { 
+    width: 100%;
+    text-align: center;
+}
+#order_button img {
+    max-width: 50%;
+}
+#basic-info dt::after {
+    content: ':';
+}
+#basic-info dd {
+    margin-left: 4%;
+}
+
+
+.message {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 2%;
+}
+#contents video {
+    text-align: center;
+    width: 96%;
+    margin: 2%;
+}
+
+
+
+#form {
+    width: 96%;
+    margin: 2%;
+    box-shadow: 5px 10px 5px lightgray;
+    position: relative;
+}
+
+.form_button {
+    text-align: center;
+    margin: 1% 5%;
+}
+.form_button > input {
+    width: 40%;
+}
+.form_button > input:first-child {
+    margin-right: 5%;
+}
+.form_button > input:last-child {
+    margin-left: 5%;
+}
+
+form legend {
+    font: bold 1.5em et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+.form_content {
+    margin: 1% 5%;
+}
+.form_content > label::after {
+    content: ':';
+}
+.form_content > input,
+.form_content > select {
+    box-sizing: border-box; /* to make appearance same on all browsers */
+    position: absolute;
+    width: 40%;
+    right: 10%;
+    height: auto;
+}
+

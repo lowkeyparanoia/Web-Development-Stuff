@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Jrenoth Misquith" content="CS2204">
+  <meta name="description" content="Credits and acknowledgements" >
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Design, details, meta-data">
+  <link rel="stylesheet" href="../css/design.css" media="all" type="text/css">
+  <link rel="stylesheet" href="../css/navigation.css" media="screen" type="text/css">
+  
+  <title>Design Page</title>
+</head>
+
+<body>
+
+  <!-- navigation  -->
+  <nav>
+    <img src="../images/nav.png" alt="Navigation-menu" class="top-nav">
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./order.html">Order</a></li>
+      <li><a href="./design.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <div id="design">
+    <br>
+    
+    <hr>
+    <h2>Design</h2>
+    <p>Name: Jrenoth </p>
+    <p>SID: 56912630 </p>
+    <p>Course: CS2204, CityU </p>
+    <hr>
+
+    <div id="css_design">
+
+      <h3>Class Work Asssignment-2</h3>
+
+      <h4>Position Scheme</h4>
+
+      <p>This website use a mixture of positioning to better fit the content.</p>
+
+      <p>Most of the elements use <span class="placeholder">static</span> positioning.</p>
+      <p>Below is an explanation of other positioning methods used:</p>
+
+      <dl>
+        <dt><span class="placeholder">Absolute</span> positioning</dt>
+          <dd>
+            <ul>
+              <dd>
+                the form <span class="placeholder">input</span> and <span class="placeholder">select</span> in home page is positioned with 10% right empty space (relative to the form) to be aligned vertically.  This also takes the elements out of normal flow.
+                (<span class="placeholder">homepage.css</span>, Line 98)
+              </dd>
+            <dt><span class="placeholder">fixed</span> positioning</dt>
+              <dd>
+                the <span class="placeholder">nav</span> class and the navigation icon is fixed to the top right corner of the browser body. This also takes the elements out of normal flow.
+                (<span class="placeholder">navigation.css</span>, Line 42)
+              </dd>
+          </dd>
+        <dt><span class="placeholder">Relative</span> positioning</dt>
+        <ul>
+          <li>
+            the navigation bar, a child of <span class="placeholder">nav element</span>, is positioned lower, relative to its original place (relative positioning), to ensure it is not covered by the navigation icon. (z-index)
+            (<span class="placeholder">navigation.css</span>, Line 2 on VSCode)
+          </li>
+          <li>
+            the <span class="placeholder">form</span> in home page is set to <span class="placeholder">relative</span> to serve as positioning ancestor for the <span class="placeholder">input</span> and <span class="placeholder">select</span>.
+            (see the next item, <span class="placeholder">homepage.css</span>, Line 83 on VSCode)
+          </li>
+        </ul>
+      </dl>
+
+      <h4>Style grouping</h4>
+      <p>All the CSS files are in 6 files in the <span class="placeholder">/css</span> folder, and HTML files are linked to them.</p>
+      <p>No inline<span id="special">&#47</span>embedded styles is used in this website. It isn't a recommended practice.</p>
+      <p>The files are as follows:</p>
+      <dl>
+        <dt><span class="placeholder">default.css</span></dt>
+          <dd>
+            The common theme across the site and other links (keeps design consistent, sets sizing precedence), for <span class="placeholder">index.html</span> and <span class="placeholder">order.html</span> (on screen).<br>
+            Including the <span class="imp">header and welcome</span> (Line 21-32, 48-52), <span class="imp">footer</span> (Line 31-38) and <span class="imp">border style</span> (Line 2-12).
+          </dd>
+        <dt><span class="placeholder">OrderPrint.css</span></dt>
+          <dd>
+            Styling applied for printing the <span class="placeholder">order.html</span>.<br>
+            All the blocks other than the <span class="imp">header and ordered item</span> are not hidden/not displayed.<br>
+            These two blocks are also auto adjusted to fit the print width. 
+            Header (Line 3-25), ordered item (Line 32-62).
+          </dd>
+        <dt><span class="placeholder">homepage.css</span></dt>
+          <dd>
+            Specific style for <span class="placeholder">index.html</span>.<br>
+            Including the <span class="imp">two-column layout</span> (Line 4-12), <span class="imp">information block</span> (Line 15-63), <span class="imp">promotion block with the iframe as a service for location</span> (Line 66-75), <span class="imp">booking block</span> (Line 78-115).
+          </dd>
+        <dt><span class="placeholder">order.css</span></dt>
+          <dd>
+            Specific style for <span class="placeholder">order.html</span> (on screen).<br>
+            including the <span class="imp">two-column layout</span> (Line 4-12), <span class="imp">order menu</span> (Line 19-94) and <span class="imp">ordered item</span> (Line 97-127).
+          </dd>
+          <dt><span class="placeholder">navigation.css</span></dt>
+          <dd>
+            Navigation styles for the nav menu with linked pages, for all pages (on screen, that is, will be hidden in print).<br>
+            Including the <span class="imp">navigation icon</span> (Line 3-15), <span class="imp">navigation menu</span> (Line 16-47) and <span class="imp">keyframe functions</span> (Line 49-70).
+          </dd>
+        <dt><span class="placeholder">design.css</span></dt>
+          <dd>
+            Specific styling for this page, <span class="placeholder">design.html</span>.
+          </dd>
+      </dl>
+      <p>Below is a thorough explanation of the styling for <span class="placeholder">order.html</span>.</p>
+      <dl>
+        <dt>Default theme (header, footer and bordered style)</dt>
+          <dd>
+            <span class="placeholder">default.css</span>.
+          </dd>
+        <dt>Double column layout and flow</dt>
+          <dd>
+            The order page is divided into two columns: order menu and the ordered items (as block displays).<br>
+            <span class="placeholder">order.css</span> Line 37-40 and 46-52 arranges them in a double column layout.
+          </dd>
+        <dt>Order menu</dt>
+          <dd>
+            <span class="placeholder">order.css</span>.
+            <ul>
+              <li>
+                Line 109-120 is for the three menu labels ("Tickets", "Dinings" and "Hotels"); Line 54-68 styles the transition of background color when the mouse hovers over the label.
+              </li>
+              <li>
+                Around Lines 40-44 hides the menu tabs.
+              </li>
+              <li>
+                Line 124-130 is for the style of menu tabs when they are displayed.
+              </li>
+              <li>
+                Line 109-120 further specifies the properties (as <span class="placeholder">inline-block</span>) of the menu tabs when they are shown, and more importantly, let them display when the mouse hover over corresponding menu label or on the menu tab.
+              </li>
+            </ul>
+          </dd>
+          <dt>Navigation icon and menu</dt>
+          <dd>
+            <span class="placeholder">navigation.css</span>.
+          </dd>
+          <dt>Printed Style</dt>
+          <dd>
+            <span class="placeholder">OrderPrint.css</span>.
+            <ul>
+              <li>Line 3-18 is for the header.</li>
+              <li>Line 28-58 is for the ordered item table.</li>
+              <li>Line 66-72 is for hiding other blocks.</li>
+            </ul>
+          </dd>
+          <dt>Ordered item table</dt>
+          <dd>
+            <span class="placeholder">order.css</span>.
+            <ul>
+              <li>Line 97-105 is for the overall style and the messages outside the table.</li>
+              <li>Line 106-116 is for table column width and text alignment.</li>
+              <li>Line 27-31 is for the <span class="placeholder">undo</span> link.</li>
+            </ul>
+          </dd>
+      </dl>
+    </div>
+  </div>
+
+  <h4>CSS3 Features</h4>
+      <dl>
+        <dt><span class="imp">Rounded Corner Borders</span></dt>
+          <dd>
+            <ul>
+              <li>
+                <span class="placeholder">border-radius</span> is used to create rounded corners for many <span class="placeholder">div</span> and box elements.
+                (<span class="placeholder">default.css</span>, Line 3-18, with the border selectors)
+              </li>
+              <li>
+                <span class="placeholder">border-radius</span> is also used for <span class="placeholder">labelling the menu</span> in the order page, with only topleft and topright corner rounded.
+                (<span class="placeholder">order.css</span>, Line 36)
+              </li>
+            </ul>
+          </dd>
+          <dt><span class="imp">Transitions</span></dt>
+          <dd>
+            <ul>
+              <li>
+                <span class="placeholder">transition</span> is used to create a color and background color change effect when the mouse hovers over an item in the navigation menu.
+                (<span class="placeholder">navigation.css</span>, Line 91-94)
+              </li>
+              <li>
+                A similar, background color change transition is applied for the <span class="placeholder">menu label</span> in order page.
+                (<span class="placeholder">order.css</span>, Line 70)
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="imp">Animations</span></dt>
+          <dd>
+            <ul>
+              <li>
+                When the page is loaded, <span class="placeholder">animation</span> makes the navigation icon flys in with rotation, and then rotate for another 360 degrees.
+                (<span class="placeholder">navigation.css</span>, Line 62-80)
+              </li>
+              <li>
+                At the same time, the navigation menu appears forwards with a cubic-bezier function.
+                (<span class="placeholder">navigation.css</span>, Line 25-30)
+              </li>
+            </ul>
+          </dd>
+      </dl>
+
+  <div>
+    <h2>Acknowledgement</h2>
+    <h3>Home Page</h3>
+    <ul>
+      <li>
+        <p> Credits to: Google Maps for providing the link for the iframe html reference to Hong Kong Disneyland </p>
+      </li>
+      <li>Image of the Compass
+        <a href="https://static.vecteezy.com/system/resources/previews/006/998/420/non_2x/compass-icon-compas-icon-isolated-on-white-background-modern-compass-logo-design-compass-icon-simple-sign-free-vector.jpg">Compass icon</a>
+      </li>
+      <li>The Park details are from
+        <a href="https://en.wikipedia.org/wiki/Hong_Kong_Disneyland">Wikipedia</a>
+        and <a href="https://www.hongkongdisneyland.com/?located=true" alt="HK Disneyland page">Hong Kong Disneyland Page</a> al
+      </li>
+    </ul>
+
+    <h3>Order Page</h3>
+    <ul>
+      <li>Images of the tickets, dinings and hotels are from
+        <a href="https://www.hongkongdisneyland.com/">Hong Kong Disneyland</a>
+      </li>
+    </ul>
+
+  </div>
+
+  <footer>
+    <p> &copy; 2023 Jrenoth Misquith
+        <br>
+        SID 56912630
+    </p>
+  </footer>
+
+</body>
+</html>

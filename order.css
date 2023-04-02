@@ -1,0 +1,136 @@
+table {
+    width: 100%;
+}
+#order_table > h2,
+h2 + h4,
+caption {
+    text-align: center;
+}
+th, 
+td {
+    background-color: lightgray;
+}
+.description {
+    width: 70%;
+    text-align: left;
+}
+.quantity {
+    width: 30%;
+    text-align: right;
+}
+
+#total {
+    text-align: right;
+}
+
+/* Table - Undo */
+#undo {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+#undo:visited {
+    color: black;
+}
+
+#menu{
+    float: left;
+    width: 75%;
+}
+
+.menu_tab{
+    display: none;
+}
+
+#order_table{
+    float: right;
+    width: 25%;
+    margin-bottom: 5%;
+    margin-top: auto;
+}
+
+h2,
+h4{
+    font: bold 1.25em Cambria,Cochin,Georgia,Times,"Times New Roman", serif;
+}
+
+.menu_label{
+    font: bold 1.25em Cambria,Cochin,Georgia,Times,"Times New Roman", serif;
+    display: inline;
+
+    box-sizing: border-box; /* Calculate border as part of width */
+
+    width: 33%;
+    float: left;
+    background-color: dimgrey;
+    border: 1px solid black;
+    border-radius: 0.8em 0.8em 0 0;
+    border-width: 0.2em 0.2em 0 0.2em
+    transition: background-color 0.8s ease-in;
+
+}
+
+
+.menu_label:hover{
+    background-color: lightslategray;
+}
+
+.menu_label:active{
+    background-color: black;
+}
+
+.menu_label > a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1em;
+}
+
+.menu_label > a:visited{
+    color: lightblue;
+}
+
+#menu > h4{
+    display: inline;
+}
+
+/* Form styling */
+
+form img{
+    float: left;
+    width: 38%;
+    height: auto;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+form input{
+    width: 38%;
+    display: block;
+}
+
+#ticket_label:hover ~ #ticket_tab,
+#ticket_tab:hover,
+#dining_label:hover ~ #dining_tab,
+#dining_tab:hover,
+#hotel_label:hover ~ #hotel_tab,
+#hotel_tab:hover{
+    display: inline-block;
+    box-sizing: border-box;
+    border-width: 0 0.4em 0.4em 0.4em;
+    border-color: darkblue;
+    border-style: solid;
+}
+
+.menu_tab > form{
+    display: inline;
+    width: 33.33%;
+    text-align: left;
+    float: left;
+
+
+    border: 1px double lightblue;
+}
+
+

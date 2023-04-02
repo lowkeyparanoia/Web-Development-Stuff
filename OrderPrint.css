@@ -1,0 +1,73 @@
+/* For printing the orders in order.html, media=print/ printer */
+
+#header{
+    width: auto;
+    text-align: center;
+}
+
+#header > doc{
+    margin: 0 5%;
+    vertical-align: middle;
+
+    display: inline-block;
+}
+
+#header div h1{
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#welcome{
+    width: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font: bold 1.25em Cambria,Cochin,Georgia,Times,"Times New Roman", serif;
+}
+
+table{
+    width: 100%;
+}
+
+#ordertable > h2,
+caption {
+    text-align: center;
+}
+
+
+th,
+td{
+    background-color: white;
+}
+
+#total{
+    text-align: right;
+}
+
+#undo{
+    display: inline-block;
+    width: 100%;
+
+    text-align: center;
+}
+
+#undo:visited{
+    color: #000;
+}
+
+.description{
+    width: 60%;
+    text-align: left;
+}
+
+h2 + h4{
+    text-align: center;
+}
+
+nav, 
+footer,
+#menu{
+    display: none;
+    visibility: hidden;
+}
+
